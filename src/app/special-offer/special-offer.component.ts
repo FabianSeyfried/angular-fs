@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {products} from '../products';
 import {ActivatedRoute} from '@angular/router';
 import {Output, EventEmitter} from '@angular/core';
+import {Input} from '@angular/core';
 
 @Component({
   selector: 'app-special-offer',
@@ -9,7 +10,10 @@ import {Output, EventEmitter} from '@angular/core';
   styleUrls: ['./special-offer.component.css']
 })
 export class SpecialOfferComponent implements OnInit {
-product;
+@Input() product;
+@Output()
+ offer = new EventEmitter(); 
+
   constructor(
     private route: ActivatedRoute,
   ) { }

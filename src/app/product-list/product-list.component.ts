@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import {ActivatedRoute} from '@angular/router';
 import { products } from '../products';
 
 @Component({
@@ -15,7 +15,11 @@ export class ProductListComponent {
   }
 
   onNotify() {
-    window.alert('You will be notified when the product goes on sale');
+    window.alert('You will be notified when the product goes on sale');  
+  }
+  onOffer() {
+    wi
+    
   }
 }
 /*

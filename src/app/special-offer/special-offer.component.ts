@@ -8,7 +8,7 @@ import {ActivatedRoute} from '@angular/router';
   styleUrls: ['./special-offer.component.css']
 })
 export class SpecialOfferComponent implements OnInit {
-
+product;
   constructor(
     private route: ActivatedRoute,
   ) { }

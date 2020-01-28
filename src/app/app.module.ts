@@ -8,7 +8,6 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
-import { SpecialOfferComponent } from './special-offer/special-offer.component';
 
 @NgModule({
   imports: [
@@ -17,7 +16,6 @@ import { SpecialOfferComponent } from './special-offer/special-offer.component';
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
       { path: 'products/:productId', component: ProductDetailsComponent}, 
-      { path: 'specialoffer/:productId', component: SpecialOfferComponent},
     ])
   ],
   declarations: [
@@ -26,7 +24,6 @@ import { SpecialOfferComponent } from './special-offer/special-offer.component';
     ProductListComponent,
     ProductAlertsComponent,
     ProductDetailsComponent,
-    SpecialOfferComponent
   ],
   bootstrap: [ AppComponent ]
 })

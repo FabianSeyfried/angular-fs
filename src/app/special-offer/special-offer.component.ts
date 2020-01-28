@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {products} from '../products';
 import {ActivatedRoute} from '@angular/router';
+import {Output, EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'app-special-offer',
@@ -18,5 +19,6 @@ product;
     this.product = products[+params.get('productId')];
 });
 }
+
 
 }

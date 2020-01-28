@@ -16,14 +16,11 @@
   Share
 </button>
 
-<app-product-alerts
-  [product]="product" 
-  (notify)="onNotify()">
-</app-product-alerts>
+<app-product-alerts  [product]="product"   (notify)="onNotify()"></app-product-alerts>
 <br>
 
+<app-special-offers [product]="product" (Offer="onOffer()"></app-special-offers>
 
-<button (click)="Offer"> Offers </button>
 </div>
 
 <!-- 
